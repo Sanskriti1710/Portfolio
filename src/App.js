@@ -102,34 +102,34 @@ const portfolioData = {
 // Skills have been refactored into categories for better organization
 skills: {
   "Frontend": [
-    { name: 'React.js', icon: <Atom />, description: 'Building modern, single-page applications with a component-based approach.' },
-    { name: 'Javascript', icon: <Code />, description: 'Writing dynamic, interactive logic for web applications.' },
-    { name: 'Bootstrap', icon: <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Bootstrap_logo.svg/1024px-Bootstrap_logo.svg.png" alt="Bootstrap Icon" className="w-6 h-6" />, description: 'Quickly creating responsive, mobile-first designs.' },
-    { name: 'Tailwind CSS', icon: <Feather />, description: 'Designing stunning and responsive UI with a utility-first approach.' },
-    { name: 'Three.js', icon: <img src="https://threejs.org/files/favicon.ico" alt="Three.js Icon" className="w-6 h-6" />, description: 'Creating 3D graphics and animations for the web.' },
+    { name: 'React.js', icon: 'Atom', description: 'Building modern SPAs with a component-based approach.' },
+    { name: 'Javascript', icon: 'Code', description: 'Writing dynamic, interactive logic for web applications.' },
+    { name: 'Bootstrap', icon: 'https://upload.wikimedia.org/wikipedia/commons/b/b2/Bootstrap_logo.svg', description: 'Quickly creating responsive, mobile-first designs.' },
+    { name: 'Tailwind CSS', icon: 'Feather', description: 'Designing stunning and responsive UI with a utility-first approach.' },
+    { name: 'Three.js', icon: 'https://threejs.org/files/favicon.ico', description: 'Creating 3D graphics and animations for the web.' },
   ],
   "Backend": [
-    { name: 'Node.js', icon: <Circle />, description: 'Developing efficient and scalable server-side applications.' },
-    { name: 'Express.js', icon: <img src="https://cdn.icon-icons.com/icons2/2699/PNG/512/expressjs_logo_icon_169185.png" alt="Express Icon" className="w-6 h-6" />, description: 'Developing web applications and APIs with Express.js.' },
-    { name: 'Java', icon: <img src="https://upload.wikimedia.org/wikipedia/en/thumb/3/30/Java_programming_language_logo.svg/121px-Java_programming_language_logo.svg.png?20220623223126" alt="Java Icon" className="w-6 h-6" />, description: 'Experienced in object-oriented programming with Java.' },
-    { name: 'PHP', icon: <img src="https://www.php.net/images/logos/php-logo.svg" alt="PHP Icon" className="w-6 h-6" />, description: 'Developing server-side web applications with PHP.' },
-    { name: 'Firebase', icon: <img src="https://firebase.google.com/downloads/brand-guidelines/PNG/logo-logomark.png" alt="Firebase Icon" className="w-6 h-6" />, description: 'Backend-as-a-Service for web and mobile applications.' },
+    { name: 'Node.js', icon: 'Circle', description: 'Developing efficient and scalable server-side applications.' },
+    { name: 'Express.js', icon: 'https://cdn.icon-icons.com/icons2/2699/PNG/512/expressjs_logo_icon_169185.png', description: 'Developing web applications and APIs.' },
+    { name: 'Java', icon: 'https://upload.wikimedia.org/wikipedia/en/3/30/Java_programming_language_logo.svg', description: 'Experienced in object-oriented programming with Java.' },
+    { name: 'PHP', icon: 'https://www.php.net/images/logos/php-logo.svg', description: 'Developing server-side web applications with PHP.' },
+    { name: 'Firebase', icon: 'https://firebase.google.com/downloads/brand-guidelines/PNG/logo-logomark.png', description: 'Backend-as-a-Service for web and mobile applications.' },
   ],
   "Databases": [
-    { name: 'MongoDB', icon: <Database />, description: 'Crafting flexible and scalable NoSQL database solutions.' },
-    { name: 'MySQL', icon: <Database />, description: 'Managing relational databases for structured data.' },
+    { name: 'MongoDB', icon: 'Database', description: 'Crafting flexible and scalable NoSQL database solutions.' },
+    { name: 'MySQL', icon: 'Database', description: 'Managing relational databases for structured data.' },
   ],
   "Tools & Platforms": [
-    { name: 'C++', icon: <PlusCircle />, description: 'Proficient in C++ for competitive programming and systems-level development.' },
-    { name: 'C', icon: <img src="https://upload.wikimedia.org/wikipedia/commons/1/19/C_Logo.png" alt="C Icon" className="w-6 h-6" />, description: 'Proficient in C for systems-level programming.' },
-    { name: 'Python', icon: <img src="https://www.python.org/static/community_logos/python-logo.png" alt="Python Icon" className="w-6 h-6" />, description: 'Programming with Python for data analysis, scripting, and ML.' },
-    { name: 'Linux', icon: <img src="https://upload.wikimedia.org/wikipedia/commons/a/af/Tux.png" alt="Linux Icon" className="w-6 h-6" />, description: 'Experienced with Linux environment and shell scripting.' },
-    { name: 'Git', icon: <GitFork />, description: 'Collaborating effectively and managing source code versioning.' },
-    { name: 'GitHub', icon: <Github />, description: 'Using GitHub for version control and project collaboration.' },
-    { name: 'VS Code', icon: <Code />, description: 'My primary code editor for development.' },
-    { name: 'Postman', icon: <Rocket />, description: 'Testing APIs and building development workflows.' },
-    { name: 'Chrome DevTools', icon: <Globe />, description: 'Debugging and profiling web applications.' },
-    { name: 'Netlify', icon: <img src="https://www.netlify.com/v3/img/components/netlify-color-bg.svg" alt="Netlify Icon" className="w-6 h-6" />, description: 'Deploying and hosting static websites and frontend projects.' },
+    { name: 'C++', icon: 'PlusCircle', description: 'Proficient in C++ for competitive programming and systems-level development.' },
+    { name: 'C', icon: 'https://upload.wikimedia.org/wikipedia/commons/1/19/C_Logo.png', description: 'Proficient in C for systems-level programming.' },
+    { name: 'Python', icon: 'https://www.python.org/static/community_logos/python-logo.png', description: 'Programming with Python for data analysis, scripting, and ML.' },
+    { name: 'Linux', icon: 'https://upload.wikimedia.org/wikipedia/commons/a/af/Tux.png', description: 'Experienced with Linux environment and shell scripting.' },
+    { name: 'Git', icon: 'GitFork', description: 'Collaborating effectively and managing source code versioning.' },
+    { name: 'GitHub', icon: 'Github', description: 'Using GitHub for version control and project collaboration.' },
+    { name: 'VS Code', icon: 'Code', description: 'My primary code editor for development.' },
+    { name: 'Postman', icon: 'Rocket', description: 'Testing APIs and building development workflows.' },
+    { name: 'Chrome DevTools', icon: 'Globe', description: 'Debugging and profiling web applications.' },
+    { name: 'Netlify', icon: 'https://www.netlify.com/v3/img/components/netlify-color-bg.svg', description: 'Deploying and hosting static websites and frontend projects.' },
   ],
 },
 
@@ -470,34 +470,51 @@ function App() {
 
           {/* Skills Section with categorized layout and scroll-in animation */}
           <motion.section 
-            id="skills"
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, amount: 0.3 }}
-            variants={sectionVariants}
-          >
-            <h3 className="text-3xl font-semibold mb-8 font-montserrat text-center">
-              My Toolkit
-            </h3>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
-              {Object.entries(portfolioData.skills).map(([category, skills]) => (
-                <div key={category} className="bg-[#1e2a47] rounded-lg p-6 shadow-md transition-transform transform hover:scale-105">
-                  <h4 className="text-2xl font-bold mb-4 capitalize text-blue-400">{category}</h4>
-                  <div className="space-y-4">
-                    {skills.map((skill, index) => (
-                      <div key={index} className="flex items-start space-x-4">
-                        <span className="text-gray-200 flex-shrink-0">{skill.icon}</span>
-                        <div>
-                          <h5 className="font-semibold text-lg">{skill.name}</h5>
-                          <p className="text-sm text-gray-400">{skill.description}</p>
-                        </div>
-                      </div>
-                    ))}
-                  </div>
-                </div>
-              ))}
+  id="skills"
+  initial="hidden"
+  whileInView="visible"
+  viewport={{ once: true, amount: 0.3 }}
+  variants={sectionVariants}
+>
+  <h3 className="text-3xl font-semibold mb-8 font-montserrat text-center">
+    My Toolkit
+  </h3>
+
+  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
+    {Object.entries(portfolioData.skills).map(([category, skills]) => (
+      <div key={category} className="bg-[#1e2a47] rounded-lg p-6 shadow-md transition-transform transform hover:scale-105">
+        <h4 className="text-2xl font-bold mb-4 capitalize text-blue-400">{category}</h4>
+        <div className="space-y-4">
+          {skills.map((skill, index) => (
+            <div key={index} className="flex items-start space-x-4">
+              <span className="text-gray-200 flex-shrink-0">
+                {skill.icon === 'Atom' && <Atom />}
+                {skill.icon === 'Code' && <Code />}
+                {skill.icon === 'Feather' && <Feather />}
+                {skill.icon === 'Circle' && <Circle />}
+                {skill.icon === 'PlusCircle' && <PlusCircle />}
+                {skill.icon === 'Database' && <Database />}
+                {skill.icon === 'GitFork' && <GitFork />}
+                {skill.icon === 'Github' && <Github />}
+                {skill.icon === 'Rocket' && <Rocket />}
+                {skill.icon === 'Globe' && <Globe />}
+                {/* Render image URLs */}
+                {skill.icon && skill.icon.startsWith('http') && (
+                  <img src={skill.icon} alt={skill.name} className="w-6 h-6" />
+                )}
+              </span>
+              <div>
+                <h5 className="font-semibold text-lg">{skill.name}</h5>
+                <p className="text-sm text-gray-400">{skill.description}</p>
+              </div>
             </div>
-          </motion.section>
+          ))}
+        </div>
+      </div>
+    ))}
+  </div>
+</motion.section>
+
         
           {/* Projects Section with scroll-in animation and hover effects */}
           <motion.section 
