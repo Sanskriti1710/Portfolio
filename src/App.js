@@ -2,6 +2,7 @@ import React, { useEffect, useRef, useState } from "react";
 import { Canvas, useFrame } from '@react-three/fiber';
 import { OrbitControls } from '@react-three/drei';
 import { motion } from "framer-motion";
+import { Menu, X } from "lucide-react";
 import {
   Atom,
   Database,
@@ -291,6 +292,7 @@ const sectionVariants = {
 
 function App() {
   const typedText = useTypewriterEffect(portfolioData.intro.typedStrings);
+  const [menuOpen, setMenuOpen] = useState(false);
 
   return (
     <div className="bg-[#121b2d] text-gray-200 min-h-screen font-roboto relative overflow-x-hidden">
@@ -306,26 +308,57 @@ function App() {
       
       {/* Fixed Navbar with scroll effects */}
       <nav className="fixed top-0 left-0 right-0 z-20 bg-transparent p-4 transition-all duration-300 ease-in-out" id="navbar">
-        <div className="max-w-5xl mx-auto flex justify-between items-center">
-          <h1 className="text-xl font-bold tracking-wide font-montserrat text-white">
-            {portfolioData.name}
-          </h1>
-          <div className="hidden md:flex space-x-6 text-sm md:text-base">
-            <a href="#about" className="text-gray-200 hover:text-blue-400 transition">About</a>
-            <a href="#education" className="text-gray-200 hover:text-blue-400 transition">Education</a>
-            <a href="#skills" className="text-gray-200 hover:text-blue-400 transition">Skills</a>
-            <a href="#projects" className="text-gray-200 hover:text-blue-400 transition">Projects</a>
-            <a href="#milestones" className="text-gray-200 hover:text-blue-400 transition">Milestones</a>
-            <a href="#certifications" className="text-gray-200 hover:text-blue-400 transition">Certifications</a>
-          </div>
+      <div className="max-w-5xl mx-auto flex justify-between items-center">
+        {/* Logo / Name */}
+        <h1 className="text-xl font-bold tracking-wide font-montserrat text-white">
+          {portfolioData.name}
+        </h1>
+
+        {/* Desktop Links */}
+        <div className="hidden md:flex space-x-6 text-sm md:text-base">
+          <a href="#about" className="text-gray-200 hover:text-blue-400 transition">About</a>
+          <a href="#education" className="text-gray-200 hover:text-blue-400 transition">Education</a>
+          <a href="#skills" className="text-gray-200 hover:text-blue-400 transition">Skills</a>
+          <a href="#projects" className="text-gray-200 hover:text-blue-400 transition">Projects</a>
+          <a href="#milestones" className="text-gray-200 hover:text-blue-400 transition">Milestones</a>
+          <a href="#certifications" className="text-gray-200 hover:text-blue-400 transition">Certifications</a>
+        </div>
+
+        {/* Connect Button (desktop only) */}
+        <a
+          href="#contact"
+          className="hidden md:inline-block bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700 transition font-montserrat font-semibold text-sm"
+        >
+          Let's Connect
+        </a>
+
+        {/* Mobile Menu Button */}
+        <button
+          className="md:hidden text-white"
+          onClick={() => setMenuOpen(!menuOpen)}
+        >
+          {menuOpen ? <X size={24} /> : <Menu size={24} />}
+        </button>
+      </div>
+
+      {/* Mobile Dropdown Menu */}
+      {menuOpen && (
+        <div className="md:hidden bg-[#1e2a47] mt-2 rounded-lg p-4 space-y-4 shadow-lg">
+          <a href="#about" className="block text-gray-200 hover:text-blue-400 transition">About</a>
+          <a href="#education" className="block text-gray-200 hover:text-blue-400 transition">Education</a>
+          <a href="#skills" className="block text-gray-200 hover:text-blue-400 transition">Skills</a>
+          <a href="#projects" className="block text-gray-200 hover:text-blue-400 transition">Projects</a>
+          <a href="#milestones" className="block text-gray-200 hover:text-blue-400 transition">Milestones</a>
+          <a href="#certifications" className="block text-gray-200 hover:text-blue-400 transition">Certifications</a>
           <a
             href="#contact"
-            className="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700 transition font-montserrat font-semibold text-sm"
+            className="block bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700 transition font-montserrat font-semibold text-sm text-center"
           >
             Let's Connect
           </a>
         </div>
-      </nav>
+      )}
+    </nav>
 
       {/* Main Content */}
       <div className="relative z-10 pt-20">
